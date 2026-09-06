@@ -3,6 +3,8 @@ services:
     image: nginx:alpine
     container_name: bubikit-landing
     restart: unless-stopped
+    environment:
+      - CACHE_BUSTER=2
     ports:
       - "5007:80"
     command: /bin/sh -c "apk add --no-cache git && rm -rf /usr/share/nginx/html/* && rm -rf /tmp/repo && git clone https://github.com/bubbik4/bubikit-landing.git /tmp/repo && cp -r /tmp/repo/html/* /usr/share/nginx/html/ && nginx -g 'daemon off;'"
