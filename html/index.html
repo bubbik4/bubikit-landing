@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bubik | Full-Stack & Homelab</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Background Animation Elements -->
+    <div class="bg-shape shape1"></div>
+    <div class="bg-shape shape2"></div>
+    <div class="bg-shape shape3"></div>
+
+    <nav>
+        <div class="logo">BUBIKIT<span>.PL</span></div>
+        <ul class="nav-links">
+            <li><a href="#about">O Mnie</a></li>
+            <li><a href="#projects">Projekty</a></li>
+            <li><a href="#services">Usługi</a></li>
+            <li><a href="#homelab">Homelab</a></li>
+        </ul>
+        <a href="https://status.bubikit.pl" class="status-btn" target="_blank" id="statusBtn">⚪ System Status</a>
+    </nav>
+
+    <header class="hero" id="about">
+        <div class="hero-content">
+            <h1>BUBIKIT<span class="neon-text">.PL</span></h1>
+            <div class="hero-buttons">
+                <a href="#projects" class="btn primary-btn">Moje Projekty</a>
+                <a href="#services" class="btn secondary-btn">Poznaj moje Usługi</a>
+            </div>
+        </div>
+    </header>
+
+    <section class="section" id="projects">
+        <h2 class="section-title">Wybrane Projekty</h2>
+        <div class="grid">
+            
+            <div class="card glass-card">
+                <div class="card-icon">💬</div>
+                <h3>E2E Messenger</h3>
+                <p>W pełni szyfrowany komunikator end-to-end (Frontend, Backend, DB). Prywatność by design z dedykowanym Landing Page'em.</p>
+                <div class="tags">
+                    <span>Full-Stack</span><span>Security</span><span>Crypto</span>
+                </div>
+            </div>
+
+            <div class="card glass-card">
+                <div class="card-icon">🎵</div>
+                <h3>Spotify ML Dev</h3>
+                <p>System wykorzystujący Machine Learning do inteligentnej rekomendacji i analizy utworów ze Spotify.</p>
+                <div class="tags">
+                    <span>AI/ML</span><span>Python</span><span>Data Science</span>
+                </div>
+            </div>
+
+            <div class="card glass-card">
+                <div class="card-icon">🤖</div>
+                <h3>Instagram Cleaner</h3>
+                <p>Autorski bot i manager operujący w tle, zajmujący się czyszczeniem kont i automatyzacją skanowania OSINT.</p>
+                <div class="tags">
+                    <span>Bot</span><span>OSINT</span><span>Python</span>
+                </div>
+            </div>
+
+            <div class="card glass-card">
+                <div class="card-icon">🚨</div>
+                <h3>Alarm ESP</h3>
+                <p>System alarmowy bazujący na modułach ESP. Bezpośrednia integracja IoT z siecią i panelami sterowania.</p>
+                <div class="tags">
+                    <span>IoT</span><span>Hardware</span><span>ESP</span>
+                </div>
+            </div>
+
+            <div class="card glass-card">
+                <div class="card-icon">📟</div>
+                <h3>Cyberdeck (ESP)</h3>
+                <p>Wielofunkcyjne urządzenie hardware'owe z ekranem: menedżer kodów TOTP, stoper, Pomodoro i interfejs dla domowego alarmu.</p>
+                <div class="tags">
+                    <span>Hardware</span><span>C++</span><span>PlatformIO</span>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="section" id="services">
+        <h2 class="section-title">Usługi <span class="neon-text">Self-Hosted</span></h2>
+        <p class="section-subtitle">Aplikacje Open-Source, które zastępują chmury komercyjne i strzegą prywatności danych.</p>
+        
+        <div class="grid" style="grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem;">
+            
+            <div class="card glass-card" style="padding: 1.5rem;">
+                <div class="card-icon" style="font-size: 2rem; margin-bottom: 0.5rem;">📸</div>
+                <h3 style="font-size: 1.25rem;">Immich</h3>
+                <p style="font-size: 0.9rem;">Alternatywa dla Google Photos z analizą twarzy i obiektów przez ML.</p>
+            </div>
+
+            <div class="card glass-card" style="padding: 1.5rem;">
+                <div class="card-icon" style="font-size: 2rem; margin-bottom: 0.5rem;">🎧</div>
+                <h3 style="font-size: 1.25rem;">Navidrome</h3>
+                <p style="font-size: 0.9rem;">Lekki i szybki serwer do strumieniowania prywatnej kolekcji muzyki.</p>
+            </div>
+
+            <div class="card glass-card" style="padding: 1.5rem;">
+                <div class="card-icon" style="font-size: 2rem; margin-bottom: 0.5rem;">🎬</div>
+                <h3 style="font-size: 1.25rem;">Jellyfin</h3>
+                <p style="font-size: 0.9rem;">Prywatne centrum multimedialne (VOD) wolne od subskrypcji i DRM.</p>
+            </div>
+
+            <div class="card glass-card" style="padding: 1.5rem;">
+                <div class="card-icon" style="font-size: 2rem; margin-bottom: 0.5rem;">📍</div>
+                <h3 style="font-size: 1.25rem;">Owntracks</h3>
+                <p style="font-size: 0.9rem;">Prywatne logowanie i śledzenie własnej lokalizacji za pomocą GPS i MQTT.</p>
+            </div>
+
+            <div class="card glass-card" style="padding: 1.5rem;">
+                <div class="card-icon" style="font-size: 2rem; margin-bottom: 0.5rem;">🔑</div>
+                <h3 style="font-size: 1.25rem;">Vaultwarden</h3>
+                <p style="font-size: 0.9rem;">Menedżer haseł hostowany brzegowo. Bezpieczny skarbiec na moje cyfrowe klucze.</p>
+            </div>
+
+            <div class="card glass-card" style="padding: 1.5rem;">
+                <div class="card-icon" style="font-size: 2rem; margin-bottom: 0.5rem;">🛡️</div>
+                <h3 style="font-size: 1.25rem;">Pi-Hole</h3>
+                <p style="font-size: 0.9rem;">Serwer DNS typu 'blackhole', odfiltrowujący reklamy i śledzące skrypty w całej sieci.</p>
+            </div>
+
+            <div class="card glass-card" style="padding: 1.5rem;">
+                <div class="card-icon" style="font-size: 2rem; margin-bottom: 0.5rem;">🔔</div>
+                <h3 style="font-size: 1.25rem;">Ntfy</h3>
+                <p style="font-size: 0.9rem;">Serwer powiadomień Push, łączący alerty z infrastruktury prosto na mój telefon.</p>
+            </div>
+
+            <div class="card glass-card" style="padding: 1.5rem;">
+                <div class="card-icon" style="font-size: 2rem; margin-bottom: 0.5rem;">📚</div>
+                <h3 style="font-size: 1.25rem;">Kiwix</h3>
+                <p style="font-size: 0.9rem;">Wikipedia i baza wiedzy (ZIM) dostępna całkowicie offline w razie przerw w dostawie sieci.</p>
+            </div>
+
+            <div class="card glass-card" style="padding: 1.5rem;">
+                <div class="card-icon" style="font-size: 2rem; margin-bottom: 0.5rem;">🕸️</div>
+                <h3 style="font-size: 1.25rem;">Spiderfoot</h3>
+                <p style="font-size: 0.9rem;">Potężna platforma OSINT automatyzująca wywiad z otwartych źródeł (bezpieczeństwo).</p>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="section" id="homelab">
+        <h2 class="section-title">Architektura <span class="neon-text">Homelab</span></h2>
+        <p class="section-subtitle">Prywatna chmura oparta na Proxmox, Dockerze i GitOps. Zobacz serce mojego środowiska.</p>
+        
+        <div class="grid architecture-grid">
+            
+            <div class="card glass-card arch-card">
+                <div class="arch-header">
+                    <span class="arch-ip">10.10.0.69</span>
+                    <h3>PVE-01</h3>
+                </div>
+                <p class="arch-role">Główny Hipervisor (Proxmox VE)</p>
+                <p>Maszyna nadrzędna hostująca węzły obliczeniowe i wirtualizująca całe środowisko chmurowe.</p>
+            </div>
+
+            <div class="card glass-card arch-card main-node">
+                <div class="arch-header">
+                    <span class="arch-ip">10.10.0.74</span>
+                    <h3>DOCKER-01</h3>
+                </div>
+                <p class="arch-role">Węzeł Kontenerowy</p>
+                <p>Zarządzany przez Portainera. Hostuje m.in. aplikacje ML, systemy śledzenia, monitoring oraz własne projekty.</p>
+            </div>
+
+            <div class="card glass-card arch-card">
+                <div class="arch-header">
+                    <span class="arch-ip">10.10.0.63</span>
+                    <h3>OMV-NAS</h3>
+                </div>
+                <p class="arch-role">Storage & Media (OpenMediaVault)</p>
+                <p>Serwer plików NAS, na którym opiera się kilka usług oraz środowisko potoków multimedialnych (Media Stack).</p>
+            </div>
+
+            <div class="card glass-card arch-card">
+                <div class="arch-header">
+                    <span class="arch-ip">10.10.0.70</span>
+                    <h3>PIZERO</h3>
+                </div>
+                <p class="arch-role">Edge & DNS (Raspberry Pi)</p>
+                <p>Fizyczny węzeł brzegowy na LAN. Działa jako AdBlock (Pi-Hole) na całą sieć oraz manager haseł Vaultwarden.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Bubikit.pl | Self-Hosted with ❤️ on Homelab</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

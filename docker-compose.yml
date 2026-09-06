@@ -1,0 +1,15 @@
+services:
+  bubikit-landing:
+    image: nginx:alpine
+    container_name: bubikit-landing
+    restart: unless-stopped
+    ports:
+      - "8080:80"
+    volumes:
+      - ./html:/usr/share/nginx/html:ro
+    networks:
+      - proxy-network
+
+networks:
+  proxy-network:
+    external: true
